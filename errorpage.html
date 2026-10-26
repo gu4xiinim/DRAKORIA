@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>That's an error.</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: black;
+            color: #222;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .error-page {
+            width: 780px;
+            max-width: calc(100% - 48px);
+            display: grid;
+            grid-template-columns: 1fr 270px;
+            gap: 42px;
+            align-items: center;
+            transform: translateY(-8px);
+        }
+
+        .logo {
+            display: block;
+            width: 300px;
+            height: auto;
+            margin-bottom: 34px;
+        }
+
+        .error-code {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0 0 30px;
+        }
+
+        .error-code span {
+            color: #666;
+            font-weight: normal;
+        }
+
+        .message {
+            font-size: 16px;
+            line-height: 1.65;
+            margin: 0;
+        }
+
+        .muted {
+            color: #777;
+        }
+
+        .dragon {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+
+        @media (max-width: 650px) {
+            body {
+                align-items: flex-start;
+            }
+
+            .error-page {
+                width: 100%;
+                grid-template-columns: 1fr;
+                gap: 28px;
+                padding: 50px 24px;
+                transform: none;
+            }
+
+            .logo {
+                width: 160px;
+                margin-bottom: 28px;
+            }
+
+            .error-code {
+                margin-bottom: 20px;
+            }
+
+            .robot {
+                width: 190px;
+                justify-self: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="error-page">
+
+        <section>
+            <img src="logo.png" alt="Google" class="logo">
+
+            <p class="error-code">
+                <span>That's an error.</span>
+            </p>
+
+            <p class="message">
+                Error №556d612063726961c3a7c3a36f2073656d20626572c3a76f20656e636f6
+                e74726f75206d6f7261646120656e747265206f73207075726f7320
+<br>
+                <span class="muted">
+                    Send a feedback to the moderation team.
+                </span>
+            </p>
+        </section>
+
+        <img src="error.png" alt="Dragon" class="dragon">
+
+    </main>
+</body>
+</html>
